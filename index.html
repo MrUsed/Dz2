@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практична робота: Розклад та списки</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>HTML: Робота з таблицями та списками</h1>
+
+    <h2>1. Таблиця розкладу занять на тиждень</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>№ пари</th>
+                <th>Час проведення</th>
+                <th>Понеділок</th>
+                <th>Вівторок</th>
+                <th>Середа</th>
+                <th>Четвер</th>
+                <th>П'ятниця</th>
+            </tr>
+        </thead>
+        <tbody>
+           
+            <tr>
+                <td>1</td>
+                <td>08:00 - 09:20</td>
+                <td><strong>WEB-технології та WEB-дизайн</strong><br><i>Дистанц.</i> <!-- --></td>
+                <td><strong>WEB-технології та WEB-дизайн</strong><br><i>ауд. 133</i> <!-- --></td>
+                <td class="empty">—</td>
+                <td class="empty">—</td>
+                <td class="empty">—</td>
+            </tr>
+         
+            <tr>
+                <td>2</td>
+                <td>09:30 - 10:50</td>
+                <td><strong>Архітектура комп'ютерів</strong><br><i>Дистанц.</i> <!-- --></td>
+                <td><strong>Архітектура комп'ютерів</strong><br><i>ауд. 220</i> <!-- --></td>
+                <td class="empty">—</td>
+                <td class="empty">—</td>
+                <td><strong>Іноземна мова</strong><br><i>ауд. 0-24-1</i> <!-- --></td>
+            </tr>
+          
+            <tr>
+                <td>3</td>
+                <td>11:10 - 12:30</td>
+                <td><strong>Серверні операційні системи</strong><br><i>Дистанц.</i> <!-- --></td>
+                <td><strong>Цифрова схемотехніка</strong><br><i>ауд. 220</i> <!-- --></td>
+                <td><strong>Цифрова схемотехніка</strong><br><i>ауд. 0-24-1</i> <!-- --></td>
+                <td><strong>Іноземна мова</strong><br><i>ауд. 0-24-1</i> <!-- --></td>
+                <td class="empty">—</td>
+            </tr>
+          
+            <tr>
+                <td>4</td>
+                <td>12:40 - 14:00</td>
+                <td><strong>Цифрова схемотехніка</strong><br><i>Дистанц.</i> <!-- --></td>
+                <td class="empty">—</td>
+                <td><strong>Фізичне виховання</strong><br><i>Стадіон</i> <!-- --></td>
+                <td class="empty">—</td>
+                <td class="empty">—</td>
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td>14:10 - 15:30</td>
+                <td class="empty">—</td>
+                <td class="empty">—</td>
+                <td><strong>Серверні операційні системи</strong><br><i>Дистанц.</i> <!-- --></td>
+                <td class="empty">—</td>
+                <td><strong>Теоретична підготовка БЗВП</strong><br><i>Дистанц.</i> <!-- --></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>2. Таблиця з об'єднаними комірками</h2>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3">Статистика успішності студентів (Приклад)</th>
+            </tr>
+            <tr>
+                <th>Предмет</th>
+                <th>Відмінно</th>
+                <th>Добре</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2"><strong>WEB-технології</strong></td>
+                <td>27 студентів</td>
+                <td>1 студент</td>
+            </tr>
+            <tr>
+                <td>99%</td>
+                <td>1%</td>
+            </tr>
+            <tr>
+                <td><strong>Архітектура комп'ютерів</strong></td>
+                <td colspan="2">Результати тестування зїв собака</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>3. Багаторівневий список (типу це Меню навчального порталу)</h2>
+    <ul>
+        <li>Головна
+            <ul>
+                <li>Мій профіль</li>
+                <li>Навчальні матеріали
+                    <ul>
+                        <li>Лекції</li>
+                        <li>Практичні завдання</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>Повідомлення</li>
+        <li>Налаштування</li>
+    </ul>
+
+    <h2>4. список з різними маркерами (хай це буде топ моїх улюбленних предметів)</h2>
+    <ul class="square-list">
+        <li>Англійська мова</li>
+        <li>Цифрова схемотехніка</li>
+    </ul>
+    <ul class="circle-list">
+        <li>Серверні операційні системи</li>
+        <li>Теоретична підготовка БЗВП</li>
+    </ul>
+
+    <h2>5. список з різними типами нумерації (найпростіші дні тижнів та найскладніші)</h2>
+    <h3>Арабські цифри(прості)</h3>
+    <ol type="1">
+        <li>Четвер</li>
+        <li>П'ятниця</li>
+    </ol>
+
+    <h3>Римські цифри(складні)</h3>
+    <ol type="I">
+        <li>понеділок</li>
+        <li>вівторок</li>
+    </ol>
+
+    <h3>Латинські літери(середні)</h3>
+    <ol type="A">
+        <li>середа</li>
+        <li>і середа)</li>
+    </ol>
+
+    <h2>6. Список визначень (ЛК ПЗ ЛБ)</h2>
+    <dl>
+        <dt><strong>ЛК</strong></dt>
+        <dd>Лекційне заняття.</dd>
+        
+        <dt><strong>ПЗ</strong></dt>
+        <dd>Практичне заняття.</dd>
+        
+        <dt><strong>ЛБ</strong></dt>
+        <dd>Лабораторна робота.</dd>
+    </dl>
+
+</body>
+</html>
